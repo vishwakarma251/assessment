@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Travelopia</title>
+  </head>
+  <body>
+    <!-- Header Component -->
+    <header>
+      <a href="/" class="logo">Travelopia</a>
+      <nav class="navbar">
+        <a href="#">About Us</a>
+        <a href="#">Travel Locations</a>
+        <a href="#">Travel Itinerary</a>
+        <a href="#">Brands</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Main Component -->
+    <main>
+      <section class="banner-section">
+        <picture>
+          <source
+            media="(min-width: 2500px)"
+            srcset="assets/img/travel-pic-w-2500-h-1406.png"
+          />
+          <source
+            media="(min-width: 1920px)"
+            srcset="assets/img/travel-pic-w-1920-h-1278.png"
+          />
+          <source
+            media="(min-width: 1600px)"
+            srcset="assets/img/travel-pic-w-1600-h-1067.png"
+          />
+          <source
+            media="(min-width:1440px)"
+            srcset="assets/img/travel-pic-w-1440-h-960.png"
+          />
+          <source
+            media="(min-width:1280px)"
+            srcset="assets/img/travel-pic-w-1280-h-853.png"
+          />
+          <source
+            media="(min-width:1024px)"
+            srcset="assets/img/travel-pic-w-1024-h-682.png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="assets/img/travel-pic-w-768-h-512.png"
+          />
+          <source
+            media="(min-width:600px)"
+            srcset="assets/img/travel-pic-w-600-h-400.png"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="assets/img/travel-pic-w-320-h-213.png"
+          />
+          <img src="assets/img/travel-pic-w-1440-h-960.png" alt="Travel" />
+        </picture>
+        <div class="banner-content-wrapper">
+          <h1>Travelopia Title</h1>
+          <button type="button" class="btn btn-click-here" onclick="clickFun()">
+            Click here
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Component -->
+    <footer>Copyright &copy; 2023 reserved by Travelopia</footer>
+    <script>
+      function clickFun() {
+        alert("Hello, World");
+      }
+    </script>
+  </body>
+</html>
