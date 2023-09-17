@@ -15,41 +15,23 @@ a {
 header,
 footer {
   background-color: #ccc;
+  color: #000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
   height: 100px;
 }
 
 /* Logo CSS */
 .logo {
-  color: #fff;
+  color: #000;
   font-size: calc(48px + (68 - 48) * ((100vw - 1440px) / (2500 - 1440)));
   font-weight: 300;
   line-height: calc(68px + (88 - 68) * ((100vw - 1440px) / (2500 - 1440)));
 }
 
-/* Header Navigation CSS */
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.navbar a {
-  color: #111;
-  display: flex;
-  font-size: calc(16px + (22 - 16) * ((100vw - 1440px) / (2500 - 1440)));
-  font-weight: 400;
-  line-height: calc(22px + (28 - 22) * ((100vw - 1440px) / (2500 - 1440)));
-  margin: 1rem;
-}
 /* Main Component CSS */
-main {
-  background-color: antiquewhite;
-  height: calc(100vh - 200px);
-  overflow: hidden;
-}
 .banner-section {
   position: relative;
   height: calc(100vh - 200px);
@@ -78,7 +60,7 @@ picture img {
   color: #fff;
   font-size: calc(24px + (30 - 24) * ((100vw - 1440px) / (2500 - 1440)));
   font-weight: 300;
-  list-style: calc(36px + (42 - 36) * ((100vw - 1440px) / (2500 - 1440)));
+  line-height: calc(36px + (42 - 36) * ((100vw - 1440px) / (2500 - 1440)));
 }
 /* Click here button CSS */
 .banner-content-wrapper .btn {
@@ -90,7 +72,7 @@ picture img {
   font-size: calc(16px + (22 - 16) * ((100vw - 1440px) / (2500 - 1440)));
   font-weight: 500;
   line-height: calc(22px + (28 - 22) * ((100vw - 1440px) / (2500 - 1440)));
-  color: #fff;
+  color: #000;
   text-align: center;
   text-decoration: none;
   min-width: calc(200px + (280 - 200) * ((100vw - 1440px) / (2500 - 1440)));
@@ -102,13 +84,8 @@ picture img {
 }
 .banner-content-wrapper .btn:hover {
   background-color: #2f55dd;
+  color: #fff;
 }
 .banner-content-wrapper .btn:focus-visible {
   outline: none;
-}
-/* Media Query for hiding the navbar */
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
 }
